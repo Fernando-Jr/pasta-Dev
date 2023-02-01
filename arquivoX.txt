@@ -1,0 +1,41 @@
+configurar o nome
+git config --global user.name "Fernando.Moura"
+
+configurar o email
+git coniig --global user.email "fernando.moura@digitron.com.br"
+
+configurar o editor
+git coniig --global core.editor vccode
+
+entrarn na pasta dev
+dir /dev
+
+enxergar todas as mudanças que estiver no projeto
+git init
+
+entrar no repositorio git
+cd .git/
+
+voltar no repositorio git
+cd ..
+
+ver pasta
+ls
+
+untracked
+os arquivos que não formam visto pelo git
+
+unmodified
+os arquivos que estão add git
+
+modified
+se vc modificar os arquivos que esta no git
+
+staged
+criar uma versão para os arquivos que foram modificado
+e volta pra o unmodified depois do commit
+
+git status
+ver o status
+
+
