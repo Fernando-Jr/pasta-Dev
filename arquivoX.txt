@@ -1,3 +1,4 @@
+
 configurar o nome
 git config --global user.name "Fernando.Moura"
 
@@ -75,10 +76,23 @@ volta até a altima versão desse hash
 git reset --hard hash
 mata tudo, até a altima versão desse hash
 
-como pegar seu git e por num repositorio de versionamento ex github
+
+
+
+
+
+
+
+
+
+
+
+
+
+como pegar seu git e por num repositorio de versionamento, ex github
 abra o terminal
 
-ssh-keygen -t rsa -b 4096 -C "fernando.moura@digitron.com.br"
+ssh-keygen -t rsa -b 4096 -C "fernandoetecinformatica@gmail.com"
 
 onde fica as chaves
 ~/.ssh
@@ -86,3 +100,26 @@ onde fica as chaves
 git remote add origin https://github.com/Fernando-Jr/pasta-Dev.git
 git branch -M main
 git push -u origin main
+
+enviar pro githab
+git push origin main
+
+onde fica a chave, arquivo id_rsa
+C:\Users\fernando.moura\.ssh
+
+ir lá no github, em settings, ssh and gpg keys
+em new ssh key
+preencher o tiutlo e o corpo com a chave
+
+no terminal git
+cd ~/.ssh/
+cat id_rsa.pub (chave)
+
+na pasta dev
+git remote add origin https://github.com/Fernando-Jr/pasta-Dev.git
+git remote
+git remote -v
+git push origin main
+
+git push -u origin master
+
