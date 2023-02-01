@@ -8,7 +8,8 @@ configurar o editor
 git coniig --global core.editor vccode
 
 entrarn na pasta dev
-dir /dev
+cd /c/dev
+dir /c/dev
 
 enxergar todas as mudanças que estiver no projeto
 git init
@@ -36,6 +37,53 @@ criar uma versão para os arquivos que foram modificado
 e volta pra o unmodified depois do commit
 
 git status
-ver o status
+ver se tem arquivos para comitar
 
+add arquivos no git
+git add arquivoX.txt
+
+comitar
+git commit -m "Adicionado um arquivo"
+ab
+
+ver os comitis
+git log
+
+ver os comitis por autor
+git log --author="Fernando Moura"
+
+ver os comitis em grafico
+git log --graph
+
+ver os comitis hash
+git show (hash)
+
+antes de dar um comit, fazer o comando git diff
+'git diff' ou 'git diff --name-only'(só o nome do arquivo que foi modificado)
+
+para não precisa adicionar e depois comitar, fazer tudo de uma vez
+git commit -am "esse é o comando"
+a
+
+volta a sua ultima alteração
+git checkout "arquivoX.txt"
+
+git reset HEAD arquivoX.txt
+
+
+git reset --soft hash
+volta até a altima versão desse hash
+
+git reset --hard hash
+mata tudo, até a altima versão desse hash
+
+
+
+como pegar seu git e por num repositorio de versionamento ex github
+abra o terminal
+
+ssh-keygen -t rsa -b 4096 -C "fernando.moura@digitron.com.br"
+
+onde fica as chaves
+~/.ssh
 
